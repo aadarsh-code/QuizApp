@@ -1,0 +1,18 @@
+.header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.link {
+  font-size: 8vw;
+  letter-spacing: 1px;
+  font-family: "Zen Kurenaido", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.divider {
+  width: 100%;
+  margin: 10px;
+  background-color: grey;
+}

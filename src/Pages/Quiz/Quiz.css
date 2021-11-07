@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap");
+.quiz {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.user {
+  border: 1px solid black;
+  font-size: 30px;
+  padding: 15px;
+  font-family: sans-serif;
+  font-weight: 400;
+  text-transform: capitalize;
+  box-shadow: 4px 4px 2px black;
+}
+.status {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  margin: 10px;
+
+  width: 100%;
+}

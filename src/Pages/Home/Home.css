@@ -1,0 +1,40 @@
+.content {
+  display: flex;
+  justify-content: space-around;
+  /* flex-direction: column-reverse; */
+}
+.catg {
+  width: 45%;
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  flex-direction: column;
+  font-weight: 300;
+  font-family: "Zen Old Mincho", serif;
+}
+img {
+  /* object-fit: contain; */
+  width: 55%;
+  align-self: center;
+  padding: 4px;
+}
+.catg_field {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-evenly;
+}
+@media (max-width: 800px) {
+  .content {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .catg {
+    width: 100%;
+    margin-top: 5px;
+  }
+  img {
+    width: 75%;
+    margin-top: 20px;
+  }
+}
