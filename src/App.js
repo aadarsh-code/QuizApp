@@ -22,8 +22,9 @@ function App() {
   return (
     <Router>
       <div className="app" style={{ backgroundImage: "url(./blue.jpg)" }}>
-        <Header />
         <Routes>
+          <Header />
+
           <Route
             exact
             path="/"
