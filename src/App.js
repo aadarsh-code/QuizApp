@@ -20,44 +20,46 @@ function App() {
     setquestion(data.results);
   };
   return (
-    <Router>
+    <>
       <div className="app" style={{ backgroundImage: "url(./blue.jpg)" }}>
-        <Routes>
+        <Router>
           <Header />
+          <Routes>
+            <Route
+              exact
+              path="/QuizApp"
+              element={
+                <Home
+                  name={name}
+                  setname={setname}
+                  fetchQuestion={fetchQuestion}
+                />
+              }
+            />
 
-          <Route
-            exact
-            path="/"
-            element={
-              <Home
-                name={name}
-                setname={setname}
-                fetchQuestion={fetchQuestion}
-              />
-            }
-          />
+            <Route
+              path="/quiz"
+              element={
+                <Quiz
+                  name={name}
+                  score={score}
+                  setscore={setscore}
+                  questions={questions}
+                  setquestion={setquestion}
+                />
+              }
+            />
 
-          <Route
-            path="/quiz"
-            element={
-              <Quiz
-                name={name}
-                score={score}
-                setscore={setscore}
-                questions={questions}
-                setquestion={setquestion}
-              />
-            }
-          />
-
-          <Route
-            path="/result"
-            element={<Result score={score} name={name} />}
-          />
-        </Routes>
+            <Route
+              path="/result"
+              element={<Result score={score} name={name} />}
+            />
+          </Routes>
+        </Router>
       </div>
+
       <Footer />
-    </Router>
+    </>
   );
 }
 

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <div className="header">
-      <Link to="/" className="link">
+      <Link to="/QuizApp" className="link">
         Multi Quiz App
       </Link>
       <hr className="divider" />
